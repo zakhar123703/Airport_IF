@@ -10,8 +10,7 @@ html(lang="en")
         title About us
     body 
         .container 
-            .header
-                .nav 
+            .header 
             .baner 
                 .baner__text Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore
                 img.baner__image(src="../img/baner__image.png", alt="")
@@ -26,10 +25,44 @@ html(lang="en")
                     img.content__image2(src="../img/content__image2.png", alt="")
                     .content__p Аеропорт обладнаний для прийому і обслуговування літаків за першою категорією.
                     img.content__image2(src="../img/content__image3.png", alt="")
-            .slider
-                .slider__nav 
-                    img(src="../img/slider__left.png", alt="")
-                .slider__nav 
-                    img(src="../img/slider__right.png", alt="")
+            //- .slider
+            //-     .slider__nav 
+            //-         img(src="../img/slider__left.png", alt="")
+            //-     .slider__nav 
+            //-         img(src="../img/slider__right.png", alt="")
+            .slider_container
+                input#i1(type="radio" name="images" checked)
+                input#i2(type="radio" name="images")
+                input#i3(type="radio" name="images")
+                input#i4(type="radio" name="images")
+                .slide_img#one
+                    img(src="../img/slider__image1.png", alt="") 
+                    label.prev(for="i4")
+                        span
+                    label.next(for="i2")
+                        span
+                .slide_img#two
+                    img(src="../img/slider__image1.png", alt="") 
+                    label.prev(for="i1")
+                        span
+                    label.next(for="i3")
+                        span
+                .slide_img#three
+                    img(src="../img/slider__image1.png", alt="") 
+                    label.prev(for="i2")
+                        span
+                    label.next(for="i4")
+                        span
+                .slide_img#four
+                    img(src="../img/slider__image1.png", alt="") 
+                    label.prev(for="i3")
+                        span
+                    label.next(for="i1")
+                        span   
+                #nav_slide
+                    label#dot1.dots(for="i1")
+                    label#dot2.dots(for="i2")   
+                    label#dot3.dots(for="i3")
+                    label#dot4.dots(for="i4")
             .footer
-            
+        script(src="../script.js") 
